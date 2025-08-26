@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<body>
+    <div class="container-fluid  mt-4 mb-5">
+        <div class="card ">
+            <div class="card-header">
+                <h4>Payment for example</h4>
+            </div>
+            <form action="">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-danger" role="alert">
+                                A simple danger alert—check it out!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group mb-3 p-2">
+                                <label class="form-label" for="card">Card #</label>
+                                <input type="text" class="form-control p-2" name="card" id="card" required tabindex="1"
+                                    maxlength="20" placeholder="XXXX-XXXX-XXXX-XXXX" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group mb-3 p-2">
+                                <label class="form-label" for="cvc">CVC #</label>
+                                <input type="text" class="form-control p-2" name="cvc" id="cvc" required tabindex="2"
+                                    maxlength="20" placeholder="0000" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group mb-3 p-2">
+                                <label class="form-label input-group" for="amount">Amount</label>
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control p-2" name="amount" id="amount" required
+                                    tabindex="3" maxlength="20" placeholder="Amount" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-3 p-2">
+                                <label class="form-label" for="firstname">First Name</label>
+                                <input type="text" class="form-control p-2" name="firstname" id="firstname" required
+                                    tabindex="4" maxlength="40" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-3 p-2">
+                                <label class="form-label" for="lastname">Last Name</label>
+                                <input type="text" class="form-control p-2" name="lastname" id="lastname" required
+                                    tabindex="5" maxlength="40" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-3 p-2">
+                                <label class="form-label" for="city">City</label>
+                                <input type="text" class="form-control p-2" name="city" id="city" required tabindex="6"
+                                    maxlength="20" />
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group mb-3 p-2">
+                                <label class="form-label" for="state">State</label>
+                                <select class="form-select p-2" name="state" id="state" required tabindex="7">
+                                    <option value="0">Pick a State</option>
+                                    <option value="1">Florida</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group mb-3 p-2">
+                                <label class="form-label" for="postalcode">Postal Code</label>
+                                <input type="text" class="form-control p-2" name="postalcode" id="postalcode" required
+                                    tabindex="8" maxlength="06" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 ">
+                            <label class="form-check-label " for="description">We accept:</label>
+                            <div class="form-group mb-3 text-center p-2 bg-secondary">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1" tabindex="9" checked>
+                                    <label class="form-check-label" for="inlineRadio1">
+                                        <i class="fa-brands fa-cc-mastercard"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">
+                                        <i class="fa-brands fa-cc-visa"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">
+                                        <i class="fa-brands fa-cc-diners-club"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">
+                                        <i class="fa-brands fa-cc-amex"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 offset-md-3">
+                            <div class="form-group  p-2">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message"
+                                    aria-describedby="passwordHelpBlock" rows="3" style="resize: none;"
+                                    tabindex="10"></textarea>
+                            </div>
+                            <div class="form-text ms-2 mt-0 mb-4" id="passwordHelpBlock"><small>Add any notes
+                                    here.</small></div>
+                        </div>
+                    </div>
+            </form>
+        </div>
+        <div class="card-footer text-body-secondary">
+            <div class=" d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary me-2">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
